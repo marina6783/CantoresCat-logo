@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Cantores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Cadastro de Cantores Favoritos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página de inicio</a></li>
+                <li><a href="desenvolvedores.html">Desenvolvedores</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Cadastre seu cantor favorito!</h2>
+        <form action="cadastro.php" method="POST">
+            <label for="nome">Seu nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+
+            <label for="email">Seu e-mail:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="cantor">Cantor favorito:</label>
+            <input type="text" id="cantor" name="cantor" required><br>
+
+            <label for="genero">Gênero musical favorito:</label>
+            <input type="text" id="genero" name="genero" required><br>
+
+            <label for="nascimento">Data de Nascimento:</label>
+            <input type="date" id="nascimento" name="nascimento" required><br>
+
+            <label for="descricao">Por que gosta desse cantor?</label>
+            <textarea id="descricao" name="descricao"></textarea><br>
+
+            <label for="newsletter">quer receber novidades sobre cantores?:</label>
+            <input type="checkbox" id="newsletter" name="newsletter" value="sim"><br>
+
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="apagar">
+        </form>
+    </main>
+
+    <footer>
+        <p>IFRN Campus Santa Cruz | Trabalho de Autoria Web | Prof. Marcelo Figueiredo Barbosa Júnior</p>
+        <p>Componentes: Luiz fernando de Oliveira araujo, Marina da silva Menezes</p>
+    </footer>
+
+</body>
+</html>
